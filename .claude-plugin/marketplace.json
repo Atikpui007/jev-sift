@@ -1,0 +1,15 @@
+{
+  "name": "jev-sift",
+  "owner": {
+    "name": "jev-sift"
+  },
+  "plugins": [
+    {
+      "name": "jev-sift",
+      "source": "./plugins/jev-sift",
+      "description": "Filters tool results through Jev before they reach Claude. Only relevant search hits, matches, files and pages enter context.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "jev-sift: keep Claude Code context clean by filtering tool results through Jev."
+}

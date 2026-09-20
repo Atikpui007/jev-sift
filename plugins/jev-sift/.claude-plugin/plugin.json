@@ -1,0 +1,17 @@
+{
+  "name": "jev-sift",
+  "version": "0.1.0",
+  "description": "jev-sift filters search results, greps, file reads and web results through Jev before they reach Claude, so only relevant items enter context.",
+  "author": {
+    "name": "jev-sift"
+  },
+  "userConfig": {
+    "TYPESAFE_API_KEY": {
+      "type": "string",
+      "title": "TypeSafe API key",
+      "description": "Your TypeSafe (Jev) API key from typesafe.ai. Stored in your keychain.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      { "matcher": "Grep|Glob|Read|WebFetch|WebSearch|mcp__.*", "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}\"/hook.js", "timeout": 60, "statusMessage": "jev-sift" }] },
+      { "matcher": "Bash", "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}\"/hook.js", "timeout": 60, "statusMessage": "jev-sift" }] }
+    ],
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}\"/setup.js" }] }
+    ]
+  }
+}
